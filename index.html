@@ -63,32 +63,33 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button  class="button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="modal-button" type="button" data-modal-close>
-              
-                <svg class="modal-svg" width="" height="">
-                  <use href=""></use>
-                </svg>
-                        </button>
+              <svg class="modal-svg" width="" height="">
+                <use href="./hero/x.svg#icon-x"></use>
+              </svg>
+            </button>
           </div>
         </div>
         <script>
-              const refs = {
+          const refs = {
             openModalBtn: document.querySelector('[data-modal-open]'),
             closeModalBtn: document.querySelector('[data-modal-close]'),
             modal: document.querySelector('[data-modal]'),
           };
-        
+
           refs.openModalBtn.addEventListener('click', toggleModal);
           refs.closeModalBtn.addEventListener('click', toggleModal);
-        
+
           function toggleModal() {
             refs.modal.classList.toggle('is-hidden');
           }
-        </script>
+        </script>fill
       </section>
       <section class="advances">
         <div class="container advances-container">
@@ -130,7 +131,8 @@
           <h2 class="subtitle">Чем мы занимаемся</h2>
           <ul class="image">
             <li class="item distribution-item">
-              <img class="img"
+              <img
+                class="img"
                 src="./imager/1.jpg"
                 alt="робота з ноутбуком"
                 width="370"
@@ -139,16 +141,18 @@
               <p class="caption">Десктопные приложения</p>
             </li>
             <li class="item distribution-item">
-              <img class="img"
+              <img
+                class="img"
                 src="./imager/2.jpg"
                 alt="робота з телефон"
                 width="370"
                 height="294"
               />
-            <p class="caption">Мобильные приложения</p>
+              <p class="caption">Мобильные приложения</p>
             </li>
             <li class="item distribution-item">
-              <img class="img"
+              <img
+                class="img"
                 src="./imager/3.jpg"
                 alt="робота з планшетом"
                 width="370"
