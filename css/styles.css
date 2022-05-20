@@ -3,6 +3,9 @@
     --two-text-color:#212121; 
     --accent-color:#2196F3;
     --two-accent-color:#ffffff;
+
+    --transition-timing: 250ms;
+    --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*header*/
@@ -742,9 +745,9 @@ address .address:focus{
 
 }
 
-.job .link:hover,
-.job .link:focus{
-    transition: box-shadow 1px 4px 6px rgba(0, 0, 0, 0.16),
+.item .link:hover,
+.item .link:focus{
+   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
    }       
@@ -754,26 +757,34 @@ address .address:focus{
 .job .text{
     color: var(--one-text-color)
 }
-.job .link:hover .scrolling-text,
-.job .link:focus .scrolling-text{
-display: block;
+
+
+/* спливаюче вікно */
+ .job .link{
+    display: inline-block;
+    transition: box-shadow var(--transition-timing) var(--transition-function)
+}
+.scrolling-div-img{
+    position: relative;
+    overflow: hidden;
 }
 
-/* .scrolling-div{
+.scrolling-div{
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    color:var(--two-accent-color);
-    font-weight: 400;
+    padding: 63px 24px;
     font-size: 18px;
     line-height: 1.55;
-    background-color: var(--accent-color);
+    color: #fff;
+    background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    
+    transition: transform var(--transition-timing) var(--transition-function);
+ 
+   
 }
-.scrolling-img{
-    position: relative;
-    overflow: hidden;
-} */
+.scrolling-text{
+    margin: 0;
+}
