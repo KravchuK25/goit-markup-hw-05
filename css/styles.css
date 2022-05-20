@@ -762,7 +762,9 @@ address .address:focus{
 /* спливаюче вікно */
 .scrolling-link{
     display: inline-block;
-    transition: box-shadow var(--transition-timing) var(--transition-function)
+    transition: box-shadow 
+    var(--transition-timing) 
+    var(--transition-function)
 }
 .scrolling-link:hover .scrolling-div,
 .scrolling-link:focus .scrolling-div {
@@ -780,7 +782,7 @@ address .address:focus{
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
+    max-height: 294px;
    
     padding: 59px 24px;
     font-size: 18px;
@@ -789,15 +791,12 @@ address .address:focus{
     color: #fff;
     background-color: rgba(33, 150, 243, 0.9);
 
-    font-size: 18px;
-    line-height: 1.55;
-    opacity: 0;
-    color: #fff;
-    background-color: rgba(33, 150, 243, 0.9);
-   
-    transform: translateY(100%);
-    transition: transform var(--transition-timing) var(--transition-function);
     
+    transform: translateY(100%);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
+
 }
 .scrolling-text{
     margin: 0;
