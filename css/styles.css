@@ -63,6 +63,9 @@
 .logo:focus,
 .logo:hover{
     text-decoration:var(--accent-color);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
 }
 .span {
     color: var(--two-text-color);
@@ -109,6 +112,9 @@ ul{
 .site-nav .link:focus{
     color:var(--accent-color);
     text-decoration:var(--accent-color);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
 }
 .item{
     margin-right: 30px;
@@ -138,6 +144,9 @@ ul{
 {
     color: var(--accent-color);
     text-decoration:var(--accent-color);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
     
 }
 .site-nav .link.current{
@@ -210,6 +219,9 @@ ul{
 .hero .button:hover,
 .hero .button:focus{
     background-color: #188CE8;
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
 }
 
 
@@ -499,6 +511,9 @@ margin-right: 0;
 {
     background-color: var(--accent-color); 
     color: var(--two-accent-color);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
 }
 .svg-icon{
         fill: currentColor;
@@ -535,6 +550,9 @@ margin-right: 0;
 .clients-link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
     }
     .svg-clients{
     fill: currentColor
@@ -566,6 +584,9 @@ footer{
 .address:hover,
 address .address:focus{
     text-decoration:var(--accent-color);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
 }
 .footer .contacts .link{
     display: flex;
@@ -578,6 +599,9 @@ address .address:focus{
 .contacts .link:focus{
     color: var(--accent-color);
     text-decoration:var(--accent-color);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
 }
 .contacts{
     padding-left: 0;
@@ -629,6 +653,9 @@ address .address:focus{
 .join-link:focus 
 {
     background-color: var(--accent-color); 
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
 }
 .svg-join{
         fill: currentColor;
@@ -690,6 +717,9 @@ address .address:focus{
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
    }       
 
 
@@ -765,6 +795,9 @@ address .address:focus{
    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+    transition: transform
+    var(--transition-timing)
+    var(--transition-function);
    }       
 .job .link{
     text-decoration: none;
@@ -785,6 +818,10 @@ address .address:focus{
 .scrolling-link:focus .scrolling-text {
   transform: translateY(0);
   opacity: 1;
+  transition: transform
+  var(--transition-timing)
+  var(--transition-function);
+  
 }
 
 .scrolling-div-img{
@@ -798,8 +835,7 @@ address .address:focus{
     top: 0;
     width: 100%;
     height: 100%;
-   
-    padding: 59px 24px;
+    padding: 63px 24px;
     font-size: 18px;
     line-height: 1.55;
     opacity: 0;
