@@ -238,7 +238,7 @@ ul{
     
     transition-duration: 500ms;
     transition-timing-function: linear;
-    transition-delay: 0;
+   
 
 }
 .backdrop.is-hidden{
@@ -247,7 +247,7 @@ ul{
    
     transition-duration: 500ms;
     transition-timing-function: linear;
-    transition-delay: 0;
+   
 }
 
 
