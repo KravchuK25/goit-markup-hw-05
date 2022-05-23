@@ -848,14 +848,15 @@ address .address:focus{
 /* спливаюче вікно */
 .scrolling-link{
     display: inline-block;
-    transition: display 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    
 }
 .scrolling-link:hover .scrolling-text,
 .scrolling-link:focus .scrolling-text {
   transform: translateY(0);
   opacity: 1;
   transition: transform
-  var(--transition-timing)
+  500ms
   var(--transition-function);
   
 }
@@ -880,9 +881,7 @@ address .address:focus{
 
     
     transform: translateY(100%);
-    transition: transform
-    var(--transition-timing)
-    var(--transition-function);
+   
 
 }
 .scrolling-text{
