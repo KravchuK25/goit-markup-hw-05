@@ -245,7 +245,7 @@ ul{
     z-index: 1;
     
    
-    transition-property: opacity;
+    transition-property: opacity, visibility;
     transition-duration: 500ms;
     transition-timing-function: linear;
    
@@ -255,7 +255,7 @@ ul{
     opacity: 0;
     pointer-events: none;
 
-    transition-property: opacity;
+    transition-property: opacity, visibility;
     transition-duration: 500ms;
     transition-timing-function: linear;
    
