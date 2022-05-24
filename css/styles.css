@@ -245,7 +245,7 @@ ul{
     z-index: 1;
     
    
-    transition-property: opacity;
+    transition-property: opacity, visibility;
     transition-duration: 500ms;
     transition-timing-function: linear;
    
@@ -254,11 +254,7 @@ ul{
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
-
-    transition-property: opacity;
-    transition-duration: 500ms;
-    transition-timing-function: linear;
-   
+    visibility: hidden;
 }
 
 
@@ -281,8 +277,8 @@ ul{
 .modal-button{
     position: absolute;
     border-radius: 50%;
-    top: 0;
-    right: 0;
+    top: 8px;
+    right: 8px;
 
     display: flex;
     align-items: center;
