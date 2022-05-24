@@ -245,7 +245,7 @@ ul{
     z-index: 1;
     
    
-    transition-property: opacity, visibility;
+    transition-property: opacity;
     transition-duration: 500ms;
     transition-timing-function: linear;
    
@@ -255,7 +255,7 @@ ul{
     opacity: 0;
     pointer-events: none;
 
-    transition-property: opacity, visibility;
+    transition-property: opacity;
     transition-duration: 500ms;
     transition-timing-function: linear;
    
@@ -524,7 +524,11 @@ margin-right: 0;
 
     background-color: var(--two-accent-color);
     color: #AFB1B8;
-    transition: color, background-color
+    transition: 
+    color 
+    var(--transition-timing)
+    var(--transition-function), 
+    background-color
     var(--transition-timing)
     var(--transition-function);
 }
@@ -536,7 +540,11 @@ margin-right: 0;
 {
     background-color: var(--accent-color); 
     color: var(--two-accent-color);
-    transition: color, background-color
+    transition: 
+    color 
+    var(--transition-timing)
+    var(--transition-function), 
+    background-color
     var(--transition-timing)
     var(--transition-function);
 }
@@ -567,7 +575,11 @@ margin-right: 0;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
-    transition: border-color, color
+    transition:
+    border-colorvar 
+    var(--transition-timing)
+    var(--transition-function), 
+    color
     var(--transition-timing)
     var(--transition-function);
    
@@ -579,11 +591,7 @@ margin-right: 0;
 .clients-link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
-    transition: border-color, color
-    var(--transition-timing)
-    var(--transition-function);
-
-
+   
     }
 .svg-clients{
     fill: currentColor
@@ -675,7 +683,8 @@ address .address:focus{
 
     background-color: #ffffff10;
     color: var(--two-accent-color);
-    transition: background-color
+    transition: 
+    background-color
     var(--transition-timing)
     var(--transition-function);
 }
@@ -686,7 +695,8 @@ address .address:focus{
 .join-link:focus 
 {
     background-color: var(--accent-color); 
-    transition: background-color
+    transition:
+    background-color
     var(--transition-timing)
     var(--transition-function);
 }
@@ -740,7 +750,13 @@ address .address:focus{
     line-height: 1.63;
     text-align: center;
     border-radius: 4px;
-    transition:  color, background-color, box-shadow 
+    transition: box-shadow  
+    var(--transition-timing)
+    var(--transition-function), 
+    color  
+    var(--transition-timing)
+    var(--transition-function), 
+    background-color
     var(--transition-timing)
     var(--transition-function);
 
@@ -753,7 +769,13 @@ address .address:focus{
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
-    transition: box-shadow, color, background-color
+    transition: box-shadow  
+    var(--transition-timing)
+    var(--transition-function), 
+    color  
+    var(--transition-timing)
+    var(--transition-function), 
+    background-color
     var(--transition-timing)
     var(--transition-function);
 
@@ -800,7 +822,7 @@ address .address:focus{
 .job > .item{
     flex-basis: calc(100% / 3 - 30px);
 
-    margin-left: 30px;
+   
     margin-top: 30px;
 }
 .job .text{
@@ -809,10 +831,7 @@ address .address:focus{
 .job .item:nth-of-type(3n){
     margin-right: 0;
 }
-.job .item{
-       margin-left: 0;
- 
-    }
+
 .job .item:nth-last-child(-n + 3){
     margin-bottom: 0;
 }
@@ -822,24 +841,8 @@ address .address:focus{
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
-.job .link{
-    position: relative;
-    display: block;
+    
 
-}
-
-.job .item .link:hover,
-.job .item .link:focus{
-   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-    transition: box-shadow
-    var(--transition-timing)
-    var(--transition-function);
-   }       
-.job .link{
-    text-decoration: none;
-}
 .job .text{
     color: var(--one-text-color)
 }
@@ -848,17 +851,25 @@ address .address:focus{
 /* спливаюче вікно */
 .scrolling-link{
     display: inline-block;
-  
-    
-}
+    transition: 
+    box-shadow
+    var(--transition-timing)
+    var(--transition-function);  
+    text-decoration: none;
+      
+  }
+
+.scrolling-link:hover,
+.scrolling-link:focus{
+   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+   }   
+
 .scrolling-link:hover .scrolling-text,
 .scrolling-link:focus .scrolling-text {
   transform: translateY(0);
   opacity: 1;
-  transition: transform
-  500ms
-  var(--transition-function);
-  
 }
 
 .scrolling-div-img{
@@ -875,16 +886,17 @@ address .address:focus{
     padding: 63px 24px;
     font-size: 18px;
     line-height: 1.55;
-    opacity: 0;
     color: #fff;
     background-color: rgba(33, 150, 243, 0.9);
 
     
-    transform: translateY(100%);
-   
+    transform: translateY(100%);  
+    transition: 
+    transform
+    var(--transition-timing)
+    var(--transition-function); 
 
 }
 .scrolling-text{
     margin: 0;
-    
-}
+    }
