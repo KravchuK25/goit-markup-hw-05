@@ -893,7 +893,7 @@ address .address:focus{
     transform: translateY(100%);  
     transition: 
     transform
-    var(--transition-timing)
+    500ms
     var(--transition-function); 
 
 }
