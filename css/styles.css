@@ -83,18 +83,15 @@ ul{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
+    position: relative;
     color: var(--two-text-color);
     transition: color
     var(--transition-timing)
     var(--transition-function);
 }
 
-.site-nav .link{
-    position: relative;
-}
-.site-nav .link.current::after
-{
+
+.site-nav .link.current::after{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -113,10 +110,7 @@ ul{
 .site-nav .link:focus{
     color:var(--accent-color);
     text-decoration:var(--accent-color);
-    transition: color
-    var(--transition-timing)
-    var(--transition-function);
-}
+  }
 .item{
     margin-right: 30px;
 }
@@ -148,9 +142,7 @@ ul{
 {
     color: var(--accent-color);
     text-decoration:var(--accent-color);
-    transition: color
-    var(--transition-timing)
-    var(--transition-function);
+  
     
 }
 .site-nav .link.current{
@@ -219,18 +211,15 @@ ul{
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
-    transition: color
+    transition: background-color
     var(--transition-timing)
     var(--transition-function);
+   
 }
 .hero .button:hover,
 .hero .button:focus{
     background-color: #188CE8;
-    
-    transition: color
-    var(--transition-timing)
-    var(--transition-function);
-}
+    }
 
 
 /* модальне вікно */
@@ -244,12 +233,9 @@ ul{
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
     
-   
     transition-property: opacity, visibility;
     transition-duration: 500ms;
     transition-timing-function: linear;
-   
-
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -266,6 +252,7 @@ ul{
     transform: translate(-50%, -50% );
     width: 528px;
     height: 581px;
+    
 
     background-color:var(--two-accent-color) ;
     border-radius: 4px;
@@ -289,7 +276,6 @@ ul{
     border: 1px solid #AFB1B8;
     background-color: var(--two-accent-color);
 
-   
 }
 .modal-svg{
     fill: #212121;
@@ -300,11 +286,10 @@ ul{
 
 /* advances*/
 .advances{
-    
     padding-top: 94px;
     padding-bottom: 94px;
-
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -318,18 +303,20 @@ ul{
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
 .advances-item{
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin-bottom: 0;
     margin-top: 0;
-    
 }
+
 .advances-item .item{
     width: 270px;
     margin-right: 30px;
 }
+
 .advances-item .item::before{
     display: block;
     content: ' ';
@@ -536,16 +523,10 @@ margin-right: 0;
 {
     background-color: var(--accent-color); 
     color: var(--two-accent-color);
-    transition: 
-    color 
-    var(--transition-timing)
-    var(--transition-function), 
-    background-color
-    var(--transition-timing)
-    var(--transition-function);
+    
 }
 .svg-icon{
-        fill: currentColor;
+    fill: currentColor;
 }
 
 
@@ -691,13 +672,9 @@ address .address:focus{
 .join-link:focus 
 {
     background-color: var(--accent-color); 
-    transition:
-    background-color
-    var(--transition-timing)
-    var(--transition-function);
-}
+   }
 .svg-join{
-        fill: currentColor;
+    fill: currentColor;
 }
 .container-footer{
     width: 231px;
@@ -764,18 +741,7 @@ address .address:focus{
     background-color: var(--accent-color);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
     0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
-    transition: box-shadow  
-    var(--transition-timing)
-    var(--transition-function), 
-    color  
-    var(--transition-timing)
-    var(--transition-function), 
-    background-color
-    var(--transition-timing)
-    var(--transition-function);
-
-    
+    0px 3px 1px rgba(0, 0, 0, 0.1);    
    }       
 
 
